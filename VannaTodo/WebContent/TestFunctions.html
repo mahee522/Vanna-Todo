@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script>
+
+function addCategory(){
+	
+	var _catName = document.createElement("catName");
+	_catName.setAttribute("type", "hidden");
+	_catName.setAttribute("name", "Category Name");
+	_catName.setAttribute("value", "Work");
+
+	document.getElementById("myform").appendChild(_catName);
+	
+	var _catDesc = document.createElement("catDesc");
+	_catDesc.setAttribute("type", "hidden");
+	_catDesc.setAttribute("name", "Category Desc");
+	_catDesc.setAttribute("value", "My Work related Tasks");
+	document.getElementById("myform").appendChild(_catDesc);
+	
+	myform.submit();
+	
+}
+
+
+</script>
+</head>
+<body>
+<form name='myform' action='TodoServlet' method="get">
+<br><br>
+	<div align="center">
+<hr>
+	<h3>User Details</h3>
+	USERID: <input type="text" name="userId" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PASSWORD: <input type="password" name="password"/><br><br>
+	
+	<h3>add category details</h3>
+	Category Name: <input type="text" name="category"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Category Description:<input type="text" name="categoryDesc"/><br><br>
+	
+	<h3>Delete category</h3>	
+	Delete Category Name:<input type="text" name="deleteCategory"><br><br>
+	
+	<h3>Task details</h3>
+	TaskName:<input type="text" name="task"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Task IS Completed:<select name="isTaskCompleted"><option value="yes">YES</option><option value="no">NO</option></select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<!-- TaskCompletionDate:<input type="date" name="taskCompletionDate">--><br><br>
+	<h3>Update Task</h3>
+	Existed TaskName:<input type="text" name="existtask"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Update TaskName:<input type="text" name="updatetask"/>
+	<h3>Delete Task</h3>
+	Delete Task Name:<input type="text" name="deleteTask"><br><br>
+<hr>
+	Action Name: <input type="text" name="action"/><br><br><br>
+	
+				<input type="submit" value="SUBMIT"/>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Login page</title>
+</head>
+<body bgcolor="teal">
+<h1 align=center style="color:white">Time Management System</h1>
+<div style="margin-top:150px">
+<form action="TodoServlet" method="post">
+	<div align="right">
+	<input type="submit" style="font-family: 'verdana'; font-size: mediuam; color: teal;font-weight: bold;"value="New User">
+	</div>
+</form>
+
+	<form action="TodoServlet" method="post">
+			<fieldset>
+			<legend style="color:white;font-family: 'verdana'; font-size: mediuam; color: white;font-weight: bold;;">
+			 Login Page</legend>
+			<div align='center'>
+			<table>
+					<tr>
+						<td><b style="color:white">User Name:&nbsp;&nbsp;</b> 
+							<input type="text" name="userId" required style="color:teal;"><br/><br/>
+						</td>
+					</tr>
+					<tr>
+						<td><b style="color:white">Password:&nbsp;&nbsp;&nbsp;&nbsp;</b>
+		    				<input type="password" name="password" required style="color:teal;" maxlength="10"><br/><br/>
+		    			</td>
+		    		</tr>
+				<tr>
+					<td>
+						<input type="submit" style="font-family: 'verdana'; font-size: mediuam; color: teal;font-weight: bold;" value="Login" >
+					</td>
+					<td>
+						<input	 type="reset" style="font-family: 'verdana'; font-size: mediuam; color: teal;font-weight: bold;" value="Clear" >
+						<input type="hidden" name="_action" value="loginAction">
+					</td>
+				</tr>
+			</table>
+				</div>
+				</fieldset>
+				
+    </form>
+	</div>
+</body>
+</html>

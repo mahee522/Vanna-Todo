@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>VannaTodo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TodoCategory</display-name>
+    <servlet-name>TodoCategory</servlet-name>
+    <servlet-class>com.transaction.TodoCategoryValidation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoCategory</servlet-name>
+    <url-pattern>/TodoCategory</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TodoTask</display-name>
+    <servlet-name>TodoTask</servlet-name>
+    <servlet-class>com.transaction.TodoTaskValidation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoTask</servlet-name>
+    <url-pattern>/TodoTask</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TodoServlet</display-name>
+    <servlet-name>TodoServlet</servlet-name>
+    <servlet-class>controller.TodoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TodoServlet</servlet-name>
+    <url-pattern>/TodoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Welcome</display-name>
+    <servlet-name>Welcome</servlet-name>
+    <servlet-class>controller.Welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Welcome</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+</web-app>
